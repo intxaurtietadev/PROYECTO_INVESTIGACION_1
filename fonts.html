@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuentes tipográficas</title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        *{
+    font-family: monospace;
+}
+        p.a {
+    font: 15px Arial, sans-serif;
+    font-style: normal;
+  }
+  
+  p.b {
+    font: bold 12px/30px Georgia, serif;
+    font-style: italic;
+    font-variant: small-caps;
+  }
+
+  p.c {
+  font-style: oblique;
+    font-variant: initial;
+    font
+
+}
+
+p.d{
+    line-height: 300%;
+}
+p.d2{
+    line-height:50%;
+
+}
+
+p.e{
+    font-weight: 900;
+    letter-spacing: normal;
+}
+
+p.f{
+    letter-spacing: 13px;
+}
+
+p.g{
+    font-size: ;
+}
+    </style>
+  </head>
+  <body>
+<h1>Fuentes, Iconos y Text</h1>
+
+    <h2>Propiedades de las fuentes</h2>
+
+    <p> Las propiedades CSS de las fuentes son las que permiten controlar el tamaño, el tipo, el grosor o el estilo de las letras, entre otras cosas. Aunque hay numerosas propiedades, las siguientes podrían ser las más destacadas.</p>
+    
+    <img src="./img/propiedadesfont.png" alt="tabla propiedades font" width="600" height="300">
+   
+    <p class="a">Esto es un párrafo. El tamaño de la fuente es de 15pixels, y la familia de la fuente es Arial. Aplicamos la propiedad font-family y font-style.</p>
+    
+
+    <p class="b">Esto es un párrafo. La fuente tiene un estilo italica y bold. El tamaño de la fuente es de 12pixels, la altura de la linea es de 30 pixels y la familia de la fuente es Georgia. Utilizamos font-family, font-style y font-variant</p>
+    
+    <p class="c">Esto es un párrafo, con el valor oblicua de la propiedad font-style.</p>
+
+    <p class="d">Esto es un párrafo de muestra para que veamos la propiedad de line-heigt. Los valores los podemos introducir como  numéricos (1.5), porcentajes (100%) o unidades (px, em..) En este caso es un porcentaje del 300%.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, hic. Obcaecati, molestias molestiae ipsum veniam laborum nemo placeat blanditiis ab accusantium ut perspiciatis aliquam magnam ea odit ipsa. Enim sequi doloremque commodi alias autem eaque dolore voluptatibus, quas laborum in. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate vel, fuga nemo laudantium ea obcaecati ipsum molestias laborum ab debitis error consequuntur! Cumque, illum dolorem. Nisi quis sequi alias illo reprehenderit cumque ipsam expedita, necessitatibus est consequatur libero id mollitia.</p>
+    <p class="d2">Esto es un párrafo de muestra para que veamos la propiedad de line-heigt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, hic. Obcaecati, molestias molestiae ipsum veniam laborum nemo placeat blanditiis ab accusantium ut perspiciatis aliquam magnam ea odit ipsa. Enim sequi doloremque commodi alias autem eaque dolore voluptatibus, quas laborum in. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate vel, fuga nemo laudantium ea obcaecati ipsum molestias laborum ab debitis error consequuntur! Cumque, illum dolorem. Nisi quis sequi alias illo reprehenderit cumque ipsam expedita, necessitatibus est consequatur libero id mollitia.</p>
+    <p class="e">Esto es un párrafo donde podemos ver como el atributo font-weight altera el grosor del texto. Tambien tiene la propiedad de letter-spacing, con el valor normal</p>
+    <p class="f">Esto es un párrafo, en cambio, en el letter-spacing tiene el valor de 13px.</p>
+    <p class="g">Esto es un párrafo</p>
+    <p class="h">Esto es un párrafo</p>
+    <p class="i">Esto es un párrafo</p>
+    <p class="j">Esto es un párrafo</p>
+    <p class="k">Esto es un párrafo</p>
+    <p class="l">Esto es un párrafo</p>
+    <p class="m">Esto es un párrafo</p>
+    <p class="n">Esto es un párrafo</p>
+    <p class="o">Esto es un párrafo</p>
+    <p class="p">Esto es un párrafo</p>
+    <p class="q">Esto es un párrafo</p>
+    <p class="r">Esto es un párrafo</p>
+    <p class="s">Esto es un párrafo</p>
+    <p class="t">Esto es un párrafo</p>
+    <p class="u">Esto es un párrafo</p>
+    <p class="v">Esto es un párrafo</p>
+    <p class="w">Esto es un párrafo</p>
+   
+   
+   
+   
+   
+   
+    <!-- <h1>Propiedades de FONT</h1>
+
+    Not Supported in HTML5.
+
+    The <font> tag was used in HTML 4 to specify the font face, font size, and color of text.
+    
+    <p style="font:caption">The font used in captioned controls.</p>
+    <p style="font:icon">The font used in icon labels.</p>
+    <p style="font:menu">The font used in dropdown menus.</p>
+    <p style="font:message-box">The font used in dialog boxes.</p>
+    <p style="font:small-caption">A smaller version of the caption font.</p>
+    <p style="font:status-bar">The font used in the status bar.</p>
+    <p><b>Note:</b> The result of the font keywords is browser dependant.</p> -->
+    
+
+
+    </body>
+    </html>
+
+
+
+
+<!-- 
+    The easiest way to implement web fonts on our website is to use a font delivery service, such as Google Fonts or Adobe Fonts, so that most of the heavy lifting is done for us. Typically, all this involves is choosing a typeface or family, and then copying a line or two of code into our website.
+
+    In this article we’ll first look at the process of adding fonts from a font delivery service, and then delve into the CSS that’s provided.
+    Loading web fonts
+
+Once we’ve browsed the font library and made our selection(s), we’ll need to copy the code provided by the delivery service into the <head> of our HTML. Google Fonts provides something like this:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+
+Or, if we'd like to use fonts in HTML email, we’ll use the @import link, which usually looks like this:
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+</style>
+
+For more information on the Google Fonts API, please see developers.google.com/fonts/docs/css2.
+
+For Adobe Fonts, the process is very similar, but the important differentiation is that the URL uses a “web project ID”. Please refer to the Adobe Fonts documentation for full details.
+
+Google Fonts and Adobe Fonts are the two major font delivery services, but there are of course others, and most offer a similar method for getting their web fonts onto our websites. However, for specifics, refer to the documentation provided by the other providers.
+Exploring the CSS served by the font delivery services
+
+If we take a look at the CSS file (in the URL above) that’s been served to us by Google Fonts, Adobe Fonts, or another provider, we’ll notice that it includes an @font-face declaration to load the font file and match it to a family, a style (either normal or italic), and a weight. In its most basic form, the CSS will look something like this, and it’s effectively the exact same CSS we’d have written ourselves if we were not using a font delivery network:
+
+@font-face {
+  font-family: 'FAMILY_NAME';
+  font-style: NORMAL_OR_ITALIC;
+  font-weight: NUMERIC_WEIGHT_VALUE;
+  src: url(FONT_FILE_NAME.woff2) format('woff2');
+}
+
+See our article “Using web fonts” for some general guidelines on web fonts as a whole, including how to counter the flash of unstyled text or FOUT.
+
+From this point, the process of defining our typographic styles in CSS is exactly the same, regardless of where the font file itself is hosted.
+
+
+
+
+
+
+
+
+    Reference the font files
+
+    In our CSS file we’ll first need to create a family reference for the font files we’re loading via an @font-face declaration. (We recommend using a dedicated CSS file for loading our fonts.)
+    
+    While the path to the font file must be precise, we can call our family name whatever we want. It’s not even necessary to have it in any way related to the actual name of the typeface—although keeping them consistent is recommended, of course. (Note that there must not be a space between url and the opening parenthesis—this is a common error.)
+    
+    @font-face {
+     font-family: 'FAMILY_NAME';
+     src: url(FONT_FILE_NAME.woff2) format('woff2');
+    }
+    
+    Assign weights and styles
+    
+    Next, let’s add in a style—either “normal” (i.e., upright), “italic,” or “oblique”—and declare a numeric font weight:
+    
+    @font-face {
+      font-family: 'FAMILY_NAME';
+      font-style: NORMAL_OR_ITALIC;
+      font-weight: NUMERIC_WEIGHT_VALUE;
+      src: url(FONT_FILE_NAME.woff2) format('woff2');
+    }
+    
+    We’ll need to repeat these steps for every font file we wish to load, but note that the family name remains the same unless we’re actually changing the typeface itself.
+    
+    Also note that the weight and style declarations are handled slightly differently for variable fonts. 
+
+
+
+    - NOTO What is Noto? Noto is a collection of high-quality fonts with
+    multiple weights and widths in sans, serif, mono, and other styles. The Noto
+    fonts are perfect for harmonious, aesthetic, and typographically correct
+    global communication, in more than 1,000 languages and over 150 writing
+    systems. "Noto" means "I write, I mark, I note" in Latin. The name is also
+    short for "no tofu", as the project aims to eliminate 'tofu': blank
+    rectangles shown when no font is available for your text. -->
+
+  </body>
+</html>
