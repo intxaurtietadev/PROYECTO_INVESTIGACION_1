@@ -1,131 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fuentes tipográficas</title>
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-        *{
-    font-family: monospace;
-}
+        * {
+            font-family: monospace;
+        }
+
         p.a {
-    font: 15px Arial, sans-serif;
-    font-style: normal;
-  }
-  
-  p.b {
-    font: bold 12px/30px Georgia, serif;
-    font-style: italic;
-    font-variant: small-caps;
-  }
+            font: 15px Arial, sans-serif;
+            font-style: normal;
+        }
 
-  p.c {
-  font-style: oblique;
-    font-variant: initial;
+        p.b {
+            font: bold 12px/30px Georgia, serif;
+            font-style: italic;
+            font-variant: small-caps;
+        }
 
-}
+        p.c {
+            font-style: oblique;
+            font-variant: initial;
+        }
 
-p.d{
-    line-height: 300%;
-}
-p.d2{
-    line-height:50%;
+        p.d {
+            line-height: 300%;
+        }
 
-}
+        p.d2 {
+            line-height: 50%;
+        }
 
-p.e{
-    font-weight: 900;
-    letter-spacing: normal;
-}
+        p.e {
+            font-weight: 900;
+            letter-spacing: normal;
+        }
 
-p.f{
-    letter-spacing: 13px;
-}
+        p.f {
+            letter-spacing: 13px;
+        }
 
-p.g{
-    font-size: smaller;
-    letter-spacing: -1px;
-}
+        p.g {
+            font-size: smaller;
+            letter-spacing: -1px;
+        }
 
+        p.h {
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-stretch: expanded;
+        }
+
+        p.i {
+            font-size: 1.5em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-kerning: auto;
+            font-weight: lighter;
+        }
+
+        p.j {
+            font-size: xx-large;
+            font-family: Times, 'Times New Roman', serif;
+            font-stretch: ultra-condensed;
+            font-variant-caps: small-caps;
+        }
     </style>
-  </head>
-  <body>
-<h1>Fuentes, Iconos y Text</h1>
+</head>
+<body>
+    <h1>Fuentes</h1>
 
-    <h2>Propiedades de las fuentes</h2>
+    <p class="a">Esto es un párrafo. El tamaño de la fuente es de 15px, y la familia de la fuente es Arial. Aplicamos la propiedad font-family y font-style.</p>
 
-    <p> Las propiedades CSS de las fuentes son las que permiten controlar el tamaño, el tipo, el grosor o el estilo de las letras, entre otras cosas. Aunque hay numerosas propiedades, las siguientes podrían ser las más destacadas.</p>
-    
-    <img src="./img/propiedadesfont.png" alt="tabla propiedades font" width="600" height="300">
-   
-    <p class="a">Esto es un párrafo. El tamaño de la fuente es de 15pixels, y la familia de la fuente es Arial. Aplicamos la propiedad font-family y font-style.</p>
-    
+    <p class="b">Esto es un párrafo. La fuente tiene un estilo italica y bold. El tamaño de la fuente es de 12px, la altura de la línea es de 30px y la familia de la fuente es Georgia. Utilizamos font-family, font-style y font-variant.</p>
 
-    <p class="b">Esto es un párrafo. La fuente tiene un estilo italica y bold. El tamaño de la fuente es de 12pixels, la altura de la linea es de 30 pixels y la familia de la fuente es Georgia. Utilizamos font-family, font-style y font-variant</p>
-    
     <p class="c">Esto es un párrafo, con el valor oblicua de la propiedad font-style.</p>
 
-    <p class="d">Esto es un párrafo de muestra para que veamos la propiedad de line-heigt. Los valores los podemos introducir como  numéricos (1.5), porcentajes (100%) o unidades (px, em..) En este caso es un porcentaje del 300%.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, hic. Obcaecati, molestias molestiae ipsum veniam laborum nemo placeat blanditiis ab accusantium ut perspiciatis aliquam magnam ea odit ipsa. Enim sequi doloremque commodi alias autem eaque dolore voluptatibus, quas laborum in. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate vel, fuga nemo laudantium ea obcaecati ipsum molestias laborum ab debitis error consequuntur! Cumque, illum dolorem. Nisi quis sequi alias illo reprehenderit cumque ipsam expedita, necessitatibus est consequatur libero id mollitia.</p>
-    <p class="d2">Esto es un párrafo de muestra para que veamos la propiedad de line-heigt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, hic. Obcaecati, molestias molestiae ipsum veniam laborum nemo placeat blanditiis ab accusantium ut perspiciatis aliquam magnam ea odit ipsa. Enim sequi doloremque commodi alias autem eaque dolore voluptatibus, quas laborum in. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate vel, fuga nemo laudantium ea obcaecati ipsum molestias laborum ab debitis error consequuntur! Cumque, illum dolorem. Nisi quis sequi alias illo reprehenderit cumque ipsam expedita, necessitatibus est consequatur libero id mollitia.</p>
-    <p class="e">Esto es un párrafo donde podemos ver como el atributo font-weight altera el grosor del texto. Tambien tiene la propiedad de letter-spacing, con el valor normal</p>
-    <p class="f">Esto es un párrafo, en cambio, en el letter-spacing tiene el valor de 13px.</p>
+    <p class="d">Esto es un párrafo de muestra para que veamos la propiedad de line-height. En este caso, es un porcentaje del 300%. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis culpa vel ab officiis quaerat natus error ducimus harum dignissimos!</p>
 
-    <p class="g">En este otro, podemos ver el efecto del letter-spacing en -1px. Ademas, hemos aplicado un font-size: smaller</p>
+    <p class="d2">Esto es un párrafo de muestra con line-height al 50%. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores optio perspiciatis, nemo a ad odit recusandae soluta nesciunt deserunt explicabo quam eum quaerat laudantium porro nostrum ab accusantium delectus, voluptatem quod voluptatibus pariatur ullam! Vel nihil tempore quisquam id!</p>
 
+    <p class="e">Este párrafo muestra cómo el atributo font-weight altera el grosor del texto, con letter-spacing en normal.</p>
 
-    <h2>Como aplicar diferentes tipografias</h2>
-   <p>Servicio de distribución de fuentes:
-    Google Fonts:
-    Una vez que hayamos explorado la biblioteca de fuentes y hecho nuestra selección, necesitaremos copiar el código proporcionado por el servicio de distribución en la etiqueta <head> de nuestro HTML. Google Fonts proporciona algo como esto:
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+    <p class="f">En este párrafo, letter-spacing tiene el valor de 13px.</p>
 
-      Si observamos el archivo CSS (en la URL mencionada arriba) que nos ha proporcionado Google Fonts, Adobe Fonts u otro proveedor, notaremos que incluye una declaración @font-face para cargar el archivo de la fuente y asignarlo a una familia, un estilo (normal o itálico) y un peso. En su forma más básica, el CSS se verá algo así, y es prácticamente el mismo CSS que habríamos escrito nosotros mismos si no estuviéramos utilizando una red de distribución de fuentes.
-     
-      @font-face {
-        font-family: 'FAMILY_NAME';
-        font-style: NORMAL_OR_ITALIC;
-        font-weight: NUMERIC_WEIGHT_VALUE;
-        src: url(FONT_FILE_NAME.woff2) format('woff2');
-      }
-  
-      <h2>Referenciar los archivos de fuente</h2>
+    <p class="g">Aquí vemos el efecto de letter-spacing en -1px y font-size: smaller.</p>
 
-En nuestro archivo CSS, primero necesitaremos crear una referencia de familia para los archivos de fuente que estamos cargando mediante una declaración @font-face. (Recomendamos usar un archivo CSS dedicado exclusivamente para cargar nuestras fuentes).
+    <p class="h">Este párrafo usa font-stretch: expanded y una fuente de tamaño 20px, familia Courier New.</p>
 
-Aunque la ruta al archivo de fuente debe ser precisa, podemos nombrar nuestra familia como queramos. No es necesario que esté relacionada con el nombre real de la tipografía, aunque, por supuesto, es recomendable mantenerlos consistentes. (Ten en cuenta que no debe haber un espacio entre url y el paréntesis de apertura; este es un error común).
-    
-@font-face {
-  font-family: 'FAMILY_NAME';
-  src: url(FONT_FILE_NAME.woff2) format('woff2')
- }
+    <p class="i">Aquí usamos font-kerning: auto, font-size: 1.5em y font-weight: lighter con la fuente Verdana.</p>
 
- <h3>Asignar pesos y estilos</h3>
-
-A continuación, agreguemos un estilo, ya sea “normal” (es decir, recto), “italic” o “oblique”, y declaremos un peso numérico para la fuente:
-
-@font-face {
-  font-family: 'FAMILY_NAME';
-  font-style: NORMAL_OR_ITALIC;
-  font-weight: NUMERIC_WEIGHT_VALUE;
-  src: url(FONT_FILE_NAME.woff2) format('woff2');
-}
-
-Deberemos repetir estos pasos para cada archivo de fuente que deseemos cargar, pero ten en cuenta que el nombre de la familia permanece igual, a menos que realmente estemos cambiando de tipografía.
-
-Además, ten en cuenta que las declaraciones de peso y estilo se manejan de manera ligeramente diferente para fuentes variables.
-
-</p>
-
-    
-
-
-    </body>
-    </html>
-
-
-
-  </body>
+    <p class="j">Este párrafo utiliza font-size: xx-large, font-stretch: ultra-condensed, y font-variant-caps: small-caps con la fuente Times.</p>
+</body>
 </html>
