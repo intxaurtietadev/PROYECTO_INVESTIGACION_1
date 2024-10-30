@@ -1,99 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fuentes tipográficas</title>
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <style>
-        * {
-            font-family: monospace;
-        }
+              * {
+                  font-family: monospace;
+                  *
+                  padding: 0;
+                  margin: 0 auto;
+              }
 
-        p.a {
-            font: 15px Arial, sans-serif;
-            font-style: normal;
-        }
+              .grad1 {
+                  height: 100vh; /* 100% del alto de la ventana */
+                  min-width: 100vw; /* 100% del ancho de la ventana */
+                  background-image: linear-gradient(rgb(223, 172, 251), rgb(247, 189, 107));
+              }
+      .flex{
+            display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 90%;
+              }
 
-        p.b {
-            font: bold 12px/30px Georgia, serif;
-            font-style: italic;
-            font-variant: small-caps;
-        }
+              p.a {
+                  font: 15px Arial, sans-serif;
+                  font-style: normal;
 
-        p.c {
-            font-style: oblique;
-            font-variant: initial;
-        }
+              }
 
-        p.d {
-            line-height: 300%;
-        }
+              p.b {
+                  font: bold 12px/30px Georgia, serif;
+                  font-style: italic;
+                  font-variant: small-caps;
+              }
 
-        p.d2 {
-            line-height: 50%;
-        }
+              p.c {
+                  font-style: oblique;
+                  font-variant: initial;
+              }
 
-        p.e {
-            font-weight: 900;
-            letter-spacing: normal;
-        }
+              p.d {
+                  line-height: 300%;
+              }
 
-        p.f {
-            letter-spacing: 13px;
-        }
+              p.d2 {
+                  line-height: 50%;
+              }
 
-        p.g {
-            font-size: smaller;
-            letter-spacing: -1px;
-        }
+              p.e {
+                  font-weight: 900;
+                  letter-spacing: normal;
+              }
 
-        p.h {
-            font-size: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            font-stretch: expanded;
-        }
+              p.f {
+                  letter-spacing: 13px;
+              }
 
-        p.i {
-            font-size: 1.5em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-kerning: auto;
-            font-weight: lighter;
-        }
+              p.g {
+                  font-size: smaller;
+                  letter-spacing: -1px;
+              }
 
-        p.j {
-            font-size: xx-large;
-            font-family: Times, 'Times New Roman', serif;
-            font-stretch: ultra-condensed;
-            font-variant-caps: small-caps;
-        }
+              p.h {
+                  font-size: 20px;
+                  font-family: 'Courier New', Courier, monospace;
+                  font-stretch: expanded;
+              }
+
+              p.i {
+                  font-size: 1.5em;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  font-kerning: auto;
+                  font-weight: lighter;
+              }
+
+              p.j {
+                  font-size: xx-large;
+                  font-family: Times, 'Times New Roman', serif;
+                  font-stretch: ultra-condensed;
+                  font-variant-caps: small-caps;
+              }
+
+              h1{
+                display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top:4rem;
+                width: 100%;
+
+              }
     </style>
-</head>
-<body>
+  </head>
+  <body class="grad1">
     <h1>Fuentes</h1>
 
-    <p class="a">Esto es un párrafo. El tamaño de la fuente es de 15px, y la familia de la fuente es Arial. Aplicamos la propiedad font-family y font-style.</p>
+    <div class="flex">
+      <p class="a">
+        Esto es un párrafo. El tamaño de la fuente es de 15px, y la familia de
+        la fuente es Arial. Aplicamos la propiedad font-family y font-style.
+      </p>
 
-    <p class="b">Esto es un párrafo. La fuente tiene un estilo italica y bold. El tamaño de la fuente es de 12px, la altura de la línea es de 30px y la familia de la fuente es Georgia. Utilizamos font-family, font-style y font-variant.</p>
+      <p class="b">
+        Esto es un párrafo. La fuente tiene un estilo italica y bold. El tamaño
+        de la fuente es de 12px, la altura de la línea es de 30px y la familia
+        de la fuente es Georgia. Utilizamos font-family, font-style y
+        font-variant.
+      </p>
 
-    <p class="c">Esto es un párrafo, con el valor oblicua de la propiedad font-style.</p>
+      <p class="c">
+        Esto es un párrafo, con el valor oblicua de la propiedad font-style.
+      </p>
 
-    <p class="d">Esto es un párrafo de muestra para que veamos la propiedad de line-height. En este caso, es un porcentaje del 300%. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis culpa vel ab officiis quaerat natus error ducimus harum dignissimos!</p>
+      <p class="d">
+        Esto es un párrafo de muestra para que veamos la propiedad de
+        line-height. En este caso, es un porcentaje del 300%. Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Quis perferendis culpa vel ab officiis
+        quaerat natus error ducimus harum dignissimos!
+      </p>
 
-    <p class="d2">Esto es un párrafo de muestra con line-height al 50%. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores optio perspiciatis, nemo a ad odit recusandae soluta nesciunt deserunt explicabo quam eum quaerat laudantium porro nostrum ab accusantium delectus, voluptatem quod voluptatibus pariatur ullam! Vel nihil tempore quisquam id!</p>
+      <p class="d2">
+        Esto es un párrafo de muestra con line-height al 50%. Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ut asperiores optio perspiciatis, nemo a
+        ad odit recusandae soluta nesciunt deserunt explicabo quam eum quaerat
+        laudantium porro nostrum ab accusantium delectus, voluptatem quod
+        voluptatibus pariatur ullam! Vel nihil tempore quisquam id!
+      </p>
 
-    <p class="e">Este párrafo muestra cómo el atributo font-weight altera el grosor del texto, con letter-spacing en normal.</p>
+      <p class="e">
+        Este párrafo muestra cómo el atributo font-weight altera el grosor del
+        texto, con letter-spacing en normal.
+      </p>
 
-    <p class="f">En este párrafo, letter-spacing tiene el valor de 13px.</p>
+      <p class="f">En este párrafo, letter-spacing tiene el valor de 13px.</p>
 
-    <p class="g">Aquí vemos el efecto de letter-spacing en -1px y font-size: smaller.</p>
+      <p class="g">
+        Aquí vemos el efecto de letter-spacing en -1px y font-size: smaller.
+      </p>
 
-    <p class="h">Este párrafo usa font-stretch: expanded y una fuente de tamaño 20px, familia Courier New.</p>
+      <p class="h">
+        Este párrafo usa font-stretch: expanded y una fuente de tamaño 20px,
+        familia Courier New.
+      </p>
 
-    <p class="i">Aquí usamos font-kerning: auto, font-size: 1.5em y font-weight: lighter con la fuente Verdana.</p>
+      <p class="i">
+        Aquí usamos font-kerning: auto, font-size: 1.5em y font-weight: lighter
+        con la fuente Verdana.
+      </p>
 
-    <p class="j">Este párrafo utiliza font-size: xx-large, font-stretch: ultra-condensed, y font-variant-caps: small-caps con la fuente Times.</p>
-</body>
+      <p class="j">
+        Este párrafo utiliza font-size: xx-large, font-stretch: ultra-condensed,
+        y font-variant-caps: small-caps con la fuente Times.
+      </p>
+    </div>
+  </body>
 </html>

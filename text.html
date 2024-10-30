@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplos de Propiedades de Texto</title>
     <style>
-        body {
+        .grad1 {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-        }
+            min-height: 100vh; /* 100% del alto de la ventana */
+            width: 100vw; /* 100% del ancho de la ventana */
+            background-image: linear-gradient(rgb(223, 172, 251), rgb(247, 189, 107));
+              }
+        
+
 
         h1 {
             text-align: center;
@@ -42,7 +46,7 @@
         }
 
         .text-shadow-example {
-            text-shadow: 4px 4px 8px rgba(255, 7, 7, 0.644); /* Sombra del texto */
+            text-shadow: 6px 6px 10px rgb(255, 7, 7); /* Sombra del texto */
         }
 
         .text-overflow-example {
@@ -58,7 +62,7 @@
         }
     </style>
 </head>
-<body>
+<body class="grad1">
 
     <h1>Ejemplos de Propiedades de Texto en CSS</h1>
 
