@@ -75,59 +75,36 @@ p.g{
 
 
     <h2>Como aplicar diferentes tipografias</h2>
-   
-   
-   
-   
-   
-    <!-- <h1>Propiedades de FONT</h1>
+   <p>Servicio de distribución de fuentes:
+    Google Fonts:
+    Una vez que hayamos explorado la biblioteca de fuentes y hecho nuestra selección, necesitaremos copiar el código proporcionado por el servicio de distribución en la etiqueta <head> de nuestro HTML. Google Fonts proporciona algo como esto:
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
 
-    Not Supported in HTML5.
+      Si observamos el archivo CSS (en la URL mencionada arriba) que nos ha proporcionado Google Fonts, Adobe Fonts u otro proveedor, notaremos que incluye una declaración @font-face para cargar el archivo de la fuente y asignarlo a una familia, un estilo (normal o itálico) y un peso. En su forma más básica, el CSS se verá algo así, y es prácticamente el mismo CSS que habríamos escrito nosotros mismos si no estuviéramos utilizando una red de distribución de fuentes.
+     
+      @font-face {
+        font-family: 'FAMILY_NAME';
+        font-style: NORMAL_OR_ITALIC;
+        font-weight: NUMERIC_WEIGHT_VALUE;
+        src: url(FONT_FILE_NAME.woff2) format('woff2');
+      }
+  
+      <h2>Referenciar los archivos de fuente</h2>
 
-    The <font> tag was used in HTML 4 to specify the font face, font size, and color of text.
+En nuestro archivo CSS, primero necesitaremos crear una referencia de familia para los archivos de fuente que estamos cargando mediante una declaración @font-face. (Recomendamos usar un archivo CSS dedicado exclusivamente para cargar nuestras fuentes).
+
+Aunque la ruta al archivo de fuente debe ser precisa, podemos nombrar nuestra familia como queramos. No es necesario que esté relacionada con el nombre real de la tipografía, aunque, por supuesto, es recomendable mantenerlos consistentes. (Ten en cuenta que no debe haber un espacio entre url y el paréntesis de apertura; este es un error común).
     
-    <p style="font:caption">The font used in captioned controls.</p>
-    <p style="font:icon">The font used in icon labels.</p>
-    <p style="font:menu">The font used in dropdown menus.</p>
-    <p style="font:message-box">The font used in dialog boxes.</p>
-    <p style="font:small-caption">A smaller version of the caption font.</p>
-    <p style="font:status-bar">The font used in the status bar.</p>
-    <p><b>Note:</b> The result of the font keywords is browser dependant.</p> -->
-    
+@font-face {
+  font-family: 'FAMILY_NAME';
+  src: url(FONT_FILE_NAME.woff2) format('woff2')
+ }
 
+ <h3>Asignar pesos y estilos</h3>
 
-    </body>
-    </html>
-
-
-
-
-<!-- 
-    The easiest way to implement web fonts on our website is to use a font delivery service, such as Google Fonts or Adobe Fonts, so that most of the heavy lifting is done for us. Typically, all this involves is choosing a typeface or family, and then copying a line or two of code into our website.
-
-    In this article we’ll first look at the process of adding fonts from a font delivery service, and then delve into the CSS that’s provided.
-    Loading web fonts
-
-Once we’ve browsed the font library and made our selection(s), we’ll need to copy the code provided by the delivery service into the <head> of our HTML. Google Fonts provides something like this:
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
-
-Or, if we'd like to use fonts in HTML email, we’ll use the @import link, which usually looks like this:
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
-</style>
-
-For more information on the Google Fonts API, please see developers.google.com/fonts/docs/css2.
-
-For Adobe Fonts, the process is very similar, but the important differentiation is that the URL uses a “web project ID”. Please refer to the Adobe Fonts documentation for full details.
-
-Google Fonts and Adobe Fonts are the two major font delivery services, but there are of course others, and most offer a similar method for getting their web fonts onto our websites. However, for specifics, refer to the documentation provided by the other providers.
-Exploring the CSS served by the font delivery services
-
-If we take a look at the CSS file (in the URL above) that’s been served to us by Google Fonts, Adobe Fonts, or another provider, we’ll notice that it includes an @font-face declaration to load the font file and match it to a family, a style (either normal or italic), and a weight. In its most basic form, the CSS will look something like this, and it’s effectively the exact same CSS we’d have written ourselves if we were not using a font delivery network:
+A continuación, agreguemos un estilo, ya sea “normal” (es decir, recto), “italic” o “oblique”, y declaremos un peso numérico para la fuente:
 
 @font-face {
   font-family: 'FAMILY_NAME';
@@ -136,52 +113,19 @@ If we take a look at the CSS file (in the URL above) that’s been served to us 
   src: url(FONT_FILE_NAME.woff2) format('woff2');
 }
 
-See our article “Using web fonts” for some general guidelines on web fonts as a whole, including how to counter the flash of unstyled text or FOUT.
+Deberemos repetir estos pasos para cada archivo de fuente que deseemos cargar, pero ten en cuenta que el nombre de la familia permanece igual, a menos que realmente estemos cambiando de tipografía.
 
-From this point, the process of defining our typographic styles in CSS is exactly the same, regardless of where the font file itself is hosted.
+Además, ten en cuenta que las declaraciones de peso y estilo se manejan de manera ligeramente diferente para fuentes variables.
 
+</p>
 
-
-
-
-
-
-
-    Reference the font files
-
-    In our CSS file we’ll first need to create a family reference for the font files we’re loading via an @font-face declaration. (We recommend using a dedicated CSS file for loading our fonts.)
     
-    While the path to the font file must be precise, we can call our family name whatever we want. It’s not even necessary to have it in any way related to the actual name of the typeface—although keeping them consistent is recommended, of course. (Note that there must not be a space between url and the opening parenthesis—this is a common error.)
-    
-    @font-face {
-     font-family: 'FAMILY_NAME';
-     src: url(FONT_FILE_NAME.woff2) format('woff2');
-    }
-    
-    Assign weights and styles
-    
-    Next, let’s add in a style—either “normal” (i.e., upright), “italic,” or “oblique”—and declare a numeric font weight:
-    
-    @font-face {
-      font-family: 'FAMILY_NAME';
-      font-style: NORMAL_OR_ITALIC;
-      font-weight: NUMERIC_WEIGHT_VALUE;
-      src: url(FONT_FILE_NAME.woff2) format('woff2');
-    }
-    
-    We’ll need to repeat these steps for every font file we wish to load, but note that the family name remains the same unless we’re actually changing the typeface itself.
-    
-    Also note that the weight and style declarations are handled slightly differently for variable fonts. 
 
 
+    </body>
+    </html>
 
-    - NOTO What is Noto? Noto is a collection of high-quality fonts with
-    multiple weights and widths in sans, serif, mono, and other styles. The Noto
-    fonts are perfect for harmonious, aesthetic, and typographically correct
-    global communication, in more than 1,000 languages and over 150 writing
-    systems. "Noto" means "I write, I mark, I note" in Latin. The name is also
-    short for "no tofu", as the project aims to eliminate 'tofu': blank
-    rectangles shown when no font is available for your text. -->
+
 
   </body>
 </html>
