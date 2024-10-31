@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aleeza, Belén, Igor, Thais">
     <meta name="description" content="Página web donde se muestran los temas que se han pedido explicar">
     <meta name="keywords" content="Fuentes tipográficas, Color y opacidad, Responsive, estructura básica de la web">
     <title>Proyecto de investigación 1</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <head>
+        <title>Explicación de CSS</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <h1>Proyecto Investigación: CSS</h1>
+        <section>
+            <h2>Color</h2>
+            <p>Establece el color de los elementos (textos, fondos).</p>
+            <ul>
+                <li>Por nombre: <span style="color:red;">rojo</span>
+                       en css, se puede espesificar un color utilizando un nombre de color predefinido.</li>
+                       
+                <li>HEX: <code>#ff6347</code></li>
+                       en css, se puede espesificar un color utilizando un valor hexadecimal.
+
+                <li>RGB: <code>rgb(255, 0, 0)</code></li>
+                       en css, un color se puede especificar como un valor rgb.
+
+                <li>HSL: <code>hsl(10, 100%, 50%)</code></li>
+                       en css, se puede espesificar un color mediante tono saturacion, y luminosidad(hsl).
+            </ul>
+            <div class="red-box"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <h2>Opacidad</h2>
+            <p>Determina cuán transparente es un elemento.</p>
+            <ul>
+                <li>transparent image</li>
+                    la propiedad de opacidad puede tomar un valor de 0.0-1.0. cuanto menor sea el valor, mas transparente sera.
+                <li>transparent hover effect</li>
+                    la propieadad de opacidad a menudo se usa junto con el selector :hover para cambiar la opacidad al pesar el mouse.
+                <li>transparent box</li>
+                    al utilizar la propiedad de opacidad para agregar transparencia al fundo de un elemento, todos sus elementos secundarios heradan la misma transparencia.
+                <li>transparency using rgba</li>
+                    si no desea aplicar la opacidad a los elementos secundarios como en nuestro ejemplo anterior, utilice valores de color rgba.
+                <li>text in transparent box</li>
+            </ul>
+            <titulo>ejemplo de transparent image<titulo>
+                 <div class="trans-img"></div>
+                 <img src="bilbao-img/BILBAO.JPG" alt="BILBAO.JPG">
+            <titulo>ejemplo de transparent hover effect</titulo>
+                 <div class="trans-img"></div>
+                 <img src="bilbao-img/BEAUTIFUL.PHOTO" alt="BEAUTIFUL.PHOTO">
+            <titulo>ejemplo de transparency using RGBA</titulo>
+                 <div class="box opacity-100">100%opacity</div>
+                 <div class="box opacity-60">60%opacity</div>
+                 <div class="box opacity-30">30%opacity</div>
+                 <div class="box opacity-10">10%opacity</div>
+            <titulo>ejemplo de transparent box</titulo>
+                 <div class="box opacity-1">opacity1</div>
+                 <div class="box opacity-06">opacity0.6</div>
+                 <div class="box opacity-03">opacity0.3</div>
+                 <div class="box opacity-01">opacity0.1</div>
+        </section>
+    </body>
+    </html>
