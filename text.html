@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Propiedades de Texto</title>
+    <style>
+        .grad1 {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh; /* 100% del alto de la ventana */
+            width: 100vw; /* 100% del ancho de la ventana */
+            background-image: linear-gradient(rgb(223, 172, 251), rgb(247, 189, 107));
+              }
+        
+
+
+        h1 {
+            text-align: center;
+        }
+
+        .text-align-last-example {
+            text-align: justify; /* Alineación justificada */
+            text-align-last: right; /* Alinea el último renglón a la derecha */
+        }
+
+        .text-decoration-example {
+            text-decoration: underline; /* Subraya el texto */
+            text-decoration-color: red; /* Color de la subrayado */
+            text-decoration-style: wavy; /* Estilo de subrayado: ondulado */
+            text-decoration-thickness: 2px; /* Grosor del subrayado */
+        }
+
+        .text-emphasis-example {
+            text-emphasis: dot blue; /* Énfasis de texto: punto azul */
+            text-emphasis-position: under; /* Posición del énfasis: debajo del texto */
+        }
+
+        .text-indent-example {
+            text-indent: 30px; /* Indenta el primer renglón 30 píxeles */
+        }
+
+        .text-justify-example {
+            text-align: justify; /* Justifica el texto */
+            text-justify: inter-word; /* Justificación entre palabras */
+        }
+
+        .text-shadow-example {
+            text-shadow: 6px 6px 10px rgb(255, 7, 7); /* Sombra del texto */
+        }
+
+        .text-overflow-example {
+            overflow: hidden;
+            white-space: nowrap; /* No permite saltos de línea */
+            text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
+        }
+
+        /* Solo para mostrar cómo se aplican las propiedades experimentales */
+        .text-wrap-example {
+            text-wrap: balance; /* Equilibra el texto en un área */
+            overflow-wrap: break-word; /* Permite que las palabras largas se rompan */
+        }
+    </style>
+</head>
+<body class="grad1">
+
+    <h1>Ejemplos de Propiedades de Texto en CSS</h1>
+
+    <h2>1. text-align-last</h2>
+    <p class="text-align-last-example">
+        Este párrafo tiene su texto alineado a la izquierda, pero el último renglón está alineado a la derecha.
+    </p>
+
+    <h2>2. text-decoration</h2>
+    <p class="text-decoration-example">
+        Este texto está subrayado, y el subrayado es de color rojo y de estilo ondulado.
+    </p>
+
+    <h2>3. text-emphasis</h2>
+    <p class="text-emphasis-example">
+        Este texto tiene énfasis en forma de punto azul debajo.
+    </p>
+
+    <h2>4. text-indent</h2>
+    <p class="text-indent-example">
+        Este texto está indentado en su primer renglón.
+    </p>
+
+    <h2>5. text-justify</h2>
+    <p class="text-justify-example">
+        Este texto está justificado, y la justificación se aplica entre palabras.
+    </p>
+
+    <h2>6. text-shadow</h2>
+    <p class="text-shadow-example">
+        Este texto tiene una sombra que lo hace destacar.
+    </p>
+
+    <h2>7. text-overflow</h2>
+    <div class="text-overflow-example" style="width: 200px;">
+        Este es un ejemplo de texto que se desborda. Si el texto es demasiado largo, se mostrará con puntos suspensivos al final.
+    </div>
+
+    <h2>8. text-wrap</h2>
+    <p class="text-wrap-example" style="width: 200px;">
+        Este texto tiene un envolvimiento que lo equilibra dentro de su contenedor.
+    </p>
+
+</body>
+</html>
